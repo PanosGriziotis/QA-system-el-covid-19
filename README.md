@@ -10,8 +10,6 @@ The `docker-compose` file enables you to start the main backend services:
 - An [Elasticsearch](https://www.elastic.co/elasticsearch) container, which serves as the Document Store.
 - A Question-Asnwering (QA) REST API container based on the [Haystack](https://docs.haystack.deepset.ai/v1.25/docs/intro) logic. This API consists of an indexing pipeline for storing text documents in the Document Store and a query pipeline for returning answers to given queries.
 
-Publication: [Developing a Question Answering (QA) Subsystem for Dialogue Systems. Case Study: Theano, a Greek-speaking Conversational Agent for COVID-19](https://pergamos.lib.uoa.gr/uoa/dl/frontend/en/browse/3440487#fields)
-
 ## Architecture Overview
 ![alt text](https://github.com/PanosGriziotis/QA-subsystem-thesis/blob/main/qa_system_architecture_v3.png?raw=true)
 
@@ -24,6 +22,10 @@ There are two types of query pipelines available for inferring answers to querie
 ### Extractive Question Answering
 
 - **Description:** This query pipeline utilizes an Extractive QA method. The answer is extracted as a span from a single retrieved document. The Extractive Reader component is a fine-tuned [multilingual DeBERTaV3](https://huggingface.co/microsoft/mdeberta-v3-base) model on SQuAD V2 and the [COVID-QA-el_small](https://huggingface.co/datasets/panosgriz/COVID-QA-el-small) dataset. 
+
+## Official Publication
+
+[Developing a Question Answering (QA) Subsystem for Dialogue Systems. Case Study: Theano, a Greek-speaking Conversational Agent for COVID-19](https://pergamos.lib.uoa.gr/uoa/dl/frontend/en/browse/3440487#fields)
 
 ## Requirements
 
