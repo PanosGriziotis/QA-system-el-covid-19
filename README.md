@@ -10,6 +10,8 @@ The `docker-compose` file enables you to start the main backend services:
 - An [Elasticsearch](https://www.elastic.co/elasticsearch) container, which serves as the Document Store.
 - A Question-Asnwering (QA) REST API container based on the [Haystack](https://docs.haystack.deepset.ai/v1.25/docs/intro) logic. This API consists of an indexing pipeline for storing text documents in the Document Store and a query pipeline for returning answers to given queries.
 
+Publication: [Developing a Question Answering (QA) Subsystem for Dialogue Systems. Case Study: Theano, a Greek-speaking Conversational Agent for COVID-19](https://pergamos.lib.uoa.gr/uoa/dl/frontend/en/browse/3440487#fields)
+
 ## Architecture Overview
 ![alt text](https://github.com/PanosGriziotis/QA-subsystem-thesis/blob/main/qa_system_architecture_v3.png?raw=true)
 
